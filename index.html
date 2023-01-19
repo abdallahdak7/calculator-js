@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="screen">
+        <h1>Calculator</h1>
+        <div class="input-container">
+          <input dir="rtl" type="text" class="input"></input>
+        </div>
+        <div class="output-container">
+          <div class="output">40</div>
+        </div>
+      </div>
+      <div class="keyboard" id="keyboard">
+        <div class="row"><button id="btn-ac">AC</button><button id="btn-back"><img src="assets/icons/backspace.svg" alt="Back" ></button><button id="btn-mod">%</button><button id="btn-div" class="last-btn">/</button></div>
+        <div class="row"><button id="btn-7">7</button> <button id="btn-8">8</button><button id="btn-9">9</button><button id="btn-multiply" class="last-btn">x</button></div>
+        <div class="row"><button id="btn-4">4</button> <button id="btn-5">5</button><button id="btn-6">6</button><button id="btn-sub" class="last-btn">-</button></div>
+        <div class="row"><button id="btn-1">1</button><button id="btn-2">2</button><button id="btn-3">3</button><button id="btn-add" class="last-btn">+</button></div>
+        <div class="row"><button>Nour</button><button id="btn-0">0</button><button id="btn-dot">.</button><button id="btn-equal" class="equal-btn">=</button></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
