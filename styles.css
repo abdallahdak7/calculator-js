@@ -75,20 +75,23 @@ button:hover {
   background-color: #e5e5e5;
   color: #18212a;
   border-radius: 50%;
-  margin: 10px;
-  height: 39.638px;
-  width: 70%;
-  padding: 0;
+  height: 60%;
+  width: 60%;
 }
 
 .equal-btn {
   background-color: #ff6531;
   color: #e5e5e5;
   border-radius: 50%;
-  margin: 10px;
-  height: 39.638px;
-  width: 70%;
-  padding: 0;
+  height: 60%;
+  width: 60%;
+}
+
+.last-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .row {
