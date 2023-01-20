@@ -20,10 +20,11 @@ h1 {
 
 button {
   color: #fff;
-  width: 100%;
   border: none;
   background-color: #18212a;
   font-size: 1rem;
+  width: 45px;
+  height: 45px;
 }
 
 button:hover {
@@ -34,7 +35,6 @@ button:hover {
   overflow: hidden;
   background-color: #fff;
   border-radius: 10px;
-  max-width: 400px;
   box-shadow: 2px 2px 10px #888888;
 }
 
@@ -74,28 +74,58 @@ button:hover {
 .last-btn {
   background-color: #e5e5e5;
   color: #18212a;
-  border-radius: 50%;
-  height: 60%;
-  width: 60%;
 }
 
 .equal-btn {
   background-color: #ff6531;
   color: #e5e5e5;
-  border-radius: 50%;
-  height: 60%;
-  width: 60%;
-}
-
-.last-btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 .row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   height: 60px;
+}
+.rad-50 {
+  border-radius: 50%;
+}
+
+@media only screen and (max-device-width: 896px) {
+  button {
+    font-size: 1.3rem;
+  }
+  .container {
+    width: 100%;
+    border-radius: 0;
+    height: 100vh;
+  }
+
+  .screen {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .input {
+    font-size: 3rem;
+  }
+
+  .output {
+    font-size: 2rem;
+  }
+  .keyboard {
+    height: 65%;
+  }
+
+  .row {
+    height: 16%;
+  }
+}
+
+@media only screen and (min-device-width: 897px) {
+  .container {
+    max-width: 400px;
+  }
 }
