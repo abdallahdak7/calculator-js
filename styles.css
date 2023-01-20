@@ -11,6 +11,14 @@ body {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-style: italic;
+
+  /*
+  Disable selection
+  */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h1 {
