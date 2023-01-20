@@ -6,6 +6,15 @@ const operation = document.getElementById('operation');
 /** event Listeners */
 keyboard.addEventListener('click', handleButtonClick);
 
+/**disable zoom feature in iOS by handling the touchmove event, and prevent the default behavior. */
+document.addEventListener(
+  'touchmove',
+  function (event) {
+    event.preventDefault();
+  },
+  { passive: false },
+);
+
 function handleButtonClick(event) {
   const btnValue = event.target.value;
 

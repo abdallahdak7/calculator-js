@@ -77,7 +77,7 @@ button {
 
 .keyboard {
   background-color: #18212a;
-  padding-bottom: 10px;
+  padding: 20px 0;
 }
 
 .last-btn {
@@ -94,7 +94,7 @@ button {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 60px;
+  height: 55px;
 }
 
 .operation {
@@ -134,7 +134,7 @@ button {
   }
 
   .row {
-    height: 16%;
+    height: 12%;
   }
 }
 
