@@ -47,20 +47,20 @@ button {
 }
 
 .screen {
+  padding: 20px;
   background-color: #36474f;
   color: #fff;
-  padding: 10px;
-  padding-bottom: 20%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 .input {
-  background-color: #36474f;
-  color: #fff;
-  border: 0;
-  outline: none;
-  cursor: default;
-  font-size: 1.2rem;
-  caret-color: transparent;
+  font-size: 2rem;
+  height: 40px;
+  font-style: normal;
 }
 
 .input-container {
@@ -110,13 +110,6 @@ button {
     height: 100%;
   }
 
-  .screen {
-    height: 25%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-  }
-
   .input {
     font-size: 3rem;
   }
@@ -125,7 +118,7 @@ button {
     font-size: 2rem;
   }
   .keyboard {
-    height: 65%;
+    height: 70%;
   }
 
   .row {
@@ -139,7 +132,7 @@ button {
   }
 
   .container {
-    max-width: 400px;
+    min-width: 300px;
   }
 }
 
