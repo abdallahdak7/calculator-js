@@ -1,6 +1,7 @@
 /** elements */
 const keyboard = document.getElementById('keyboard');
 const input = document.getElementById('input');
+const operation = document.getElementById('operation');
 
 /** event Listeners */
 keyboard.addEventListener('click', handleButtonClick);
@@ -17,7 +18,10 @@ function handleButtonClick(event) {
   }
 
   /** handle AC button */
-  if (btnValue == 'clear') input.innerText = '';
+  if (btnValue == 'clear') {
+    operation.innerText = '';
+    input.innerText = '';
+  }
 
   /** max allowed numbers is 9 */
   if (input.innerText.length == 9) {
@@ -27,6 +31,10 @@ function handleButtonClick(event) {
   /** allow numbers only to the input */
   if ('.00123456789'.includes(btnValue)) {
     input.innerText += btnValue;
+  }
+
+  if ('%+-*/'.includes(btnValue)) {
+    operation.innerText = btnValue;
   }
 }
 

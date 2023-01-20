@@ -74,6 +74,7 @@ button {
   justify-content: right;
   font-size: 1.1rem;
 }
+
 .keyboard {
   background-color: #18212a;
   padding-bottom: 10px;
@@ -117,6 +118,12 @@ button {
   .output {
     font-size: 2rem;
   }
+
+  .operation {
+    font-size: 1.3rem;
+    /* margin: 50px; */
+  }
+
   .keyboard {
     height: 70%;
   }
