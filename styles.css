@@ -50,7 +50,7 @@ button {
   padding: 20px;
   background-color: #36474f;
   color: #fff;
-  height: 30%;
+  height: 28%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -96,6 +96,11 @@ button {
   align-items: center;
   height: 60px;
 }
+
+.operation {
+  height: 10px;
+}
+
 .rad-50 {
   border-radius: 50%;
 }
@@ -125,7 +130,7 @@ button {
   }
 
   .keyboard {
-    height: 70%;
+    height: 72%;
   }
 
   .row {

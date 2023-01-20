@@ -23,6 +23,11 @@ function handleButtonClick(event) {
     input.innerText = '';
   }
 
+  /** handle operations */
+  if ('%+-*/'.includes(btnValue)) {
+    operation.innerText = btnValue;
+  }
+
   /** max allowed numbers is 9 */
   if (input.innerText.length == 9) {
     return;
@@ -31,10 +36,6 @@ function handleButtonClick(event) {
   /** allow numbers only to the input */
   if ('.00123456789'.includes(btnValue)) {
     input.innerText += btnValue;
-  }
-
-  if ('%+-*/'.includes(btnValue)) {
-    operation.innerText = btnValue;
   }
 }
 
