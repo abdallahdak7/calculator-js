@@ -98,6 +98,10 @@ button:hover {
   button {
     font-size: 1.3rem;
   }
+
+  button:active {
+    transform: none;
+  }
   .container {
     width: 100%;
     border-radius: 0;
