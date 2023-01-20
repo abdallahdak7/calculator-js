@@ -28,10 +28,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-button:hover {
-  opacity: 0.8;
+  outline: none;
 }
 
 .container {
@@ -99,9 +96,6 @@ button:hover {
     font-size: 1.3rem;
   }
 
-  button:active {
-    transform: none;
-  }
   .container {
     width: 100%;
     border-radius: 0;
@@ -132,7 +126,15 @@ button:hover {
 }
 
 @media only screen and (min-device-width: 897px) {
+  button:hover {
+    opacity: 0.8;
+  }
+
   .container {
     max-width: 400px;
   }
+}
+
+button:active {
+  opacity: 0.6;
 }
